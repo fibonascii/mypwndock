@@ -12,5 +12,8 @@ RUN cd ~/tools \
 
 RUN echo 'export PS1="[\[\e[34m\]\u\[\e[0m\]@\[\e[33m\]\H\[\e[0m\]:\w]\$ "' >> /root/.bashrc
 
+ADD /Users/rkirby/.tmux.conf /root/.tmux.conf
+
 # work env
-WORKDIR /root/code
+
+WORKDIR /root/CTF
